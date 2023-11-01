@@ -1,0 +1,1024 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ font-family: sans-serif;
+ /* background-color: black; */
+}
+
+
+/* ==================fadeup design============= */
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 2s;
+}
+
+.fade-up.fade-up-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========HEADER DESIGN============ */
+
+header{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 1000;
+    background-color: black;
+}
+
+header .logo{
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: floralwhite;
+    font-size: 18px;
+}
+
+header  ul li a:hover{
+    color: aqua;
+}
+
+header .hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+header .hamburger .line{
+    height: 3px;
+    width: 20px;
+    background-color: aqua;
+    margin-bottom: 3px;
+}
+
+/* ===============BANNER DESIGN=============== */
+.container{
+    width: 100%;
+    background: url('images/bg-1.jpg') no-repeat center;
+    background-size: cover;
+    /* padding: 16.875rem 0 9.375rem; */
+    padding: 40.875rem 0 9.375rem;
+    /* padding-top: 40.875rem; */
+
+}
+
+.container .content{
+    position: absolute;
+    margin:0px 0px 0px 200px;
+    top: 200px;
+    padding-bottom: 100px;
+}
+
+.container .content h1{
+    color:floralwhite ;
+    font-size: 2.5rem;
+    line-height: 55px;
+    letter-spacing: 3px;
+    
+}
+
+.container .content h1 span{
+    color: aqua;
+}
+
+.container .content p{
+    color: dimgray;
+    margin: 20px 0px 20px 0px;
+}
+
+.container .content a button:first-child{
+    background-color: aqua;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.container .content button:last-child{
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border: 2px solid aqua;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.container .content button:last-child a{
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.container .content button:last-child:hover{
+    opacity: 0.5;
+}
+
+/* ====================ABOUT SECTION============= */
+
+.container-about{
+    background-color: black;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* .container-about .about-image {
+    position: relative;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    width: 630px;
+    height: 400px;
+    margin-left: 100px;
+
+} */
+
+.container-about .about-image img{
+    /* position: absolute; */
+    /* display: inline-block; */
+    margin-left: 100px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+    left: -100px;
+    top: -40px;
+}
+
+.container-about .about-image img:hover{
+    border: 1px solid aqua;
+}
+
+.container-about .about-content{
+    margin: 0px 50px 50px 150px;
+}
+
+.container-about .about-content button{
+    font-size: 18px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 100;
+    border: 1px solid darkgrey;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+}
+
+.container-about .about-content h2{
+    font-size: 32px;
+    color: floralwhite;
+    font-weight: 100;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.container-about .about-content h2 span{
+    color: aqua;
+}
+
+
+.container-about .about-content p{
+    display: inline-block;
+    color:darkgrey;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    /* font-size: 20px; */
+}
+
+.container-about .about-content .about-service{
+    display: flex;
+    /* margin: 50px ; */
+}
+
+.container-about .about-content .about-service ul{
+    list-style: none; 
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.container-about .about-content .about-service ul:last-child{
+    margin-left: 50px;
+
+}
+
+.container-about .about-content .about-service ul li::before{
+    content: "\2713"; /* Use a checkmark character ✓ */
+    color: aqua; /* Change the color to your desired color */
+    font-size: 1.8em; /* Adjust the font size as needed */
+    margin-right: 0.5em; /* Add some spacing between the bullet and the list item */
+}
+
+.container-about .about-content .about-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    border: 1px solid darkgray;
+    padding: 20px 0px 20px 0px;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+}
+
+.container-about .about-content .about-contact:hover{
+    border: 1px solid aqua;
+ }
+
+ .container-about .about-content .about-contact:hover a{
+    color: aqua;
+ }
+
+.container-about .about-content .about-contact .email img{
+    width: 40px;
+    height: 40px;
+}
+
+.container-about .about-content .about-contact .phone img{
+    width: 40px;
+    height: 40px;
+}
+
+.container-about .about-content .about-contact .email{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.container-about .about-content .about-contact .email-item,.phone-item{
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.container-about .about-content .about-contact .email-item h1,.phone-item h1{
+    color: darkgray;
+    font-size: 16px;
+    font-weight: 100;
+    
+}
+
+.container-about .about-content .about-contact .email-item a,.phone-item a{
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 20px;
+}
+
+.container-about .about-content .about-contact .email-item a:hover,.phone-item a:hover{
+    color: aqua;
+}
+
+.container-about .about-content .about-contact .phone{
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================RESUME DESIGN===================== */
+
+.container-resume{
+    width: 100%;
+    background: url('images/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    /* padding: 40.875rem 0 9.375rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.container-resume .image{
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.container-resume .image img{
+    width: 250px;
+    height: 250px;
+}
+
+.container-resume .resume-content{
+    /* margin-top: 30px; */
+    margin: 30px 0px 0px -100px;
+    padding-bottom: 80px;
+}
+
+.container-resume .resume-content button{
+    font-size: 18px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 100;
+    border: 1px solid darkgrey;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+}
+
+.container-resume .resume-content h2{
+    color: floralwhite;
+    font-size: 2.7rem;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.container-resume .resume-content h2 span{
+    color: aqua;
+}
+
+.container-resume .resume-content .exp-edu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    width: 900px;
+    height: 400px;
+    margin-top: 70px;
+}
+
+.container-resume .resume-content .exp-edu:hover {
+    border: 1px solid aqua;
+}
+
+
+
+.container-resume .resume-content .exp-edu h2,h3{
+    font-size: 16px;
+    color: darkgray;
+    margin: 10px;
+    font-weight: 300;
+}
+
+.container-resume .resume-content .exp-edu h1{
+    color: floralwhite;
+    margin-left: 10px;
+}
+
+.container-resume .resume-content .exp-edu .school{
+    margin-top: 60px;
+}
+
+.container-resume .resume-content .exp-edu .bachelor{
+    margin-top: 60px;
+}
+
+.container-resume .resume-content .exp-edu .experience .medreck,.school{
+    display: flex;
+    align-items: center;
+}
+
+.container-resume .resume-content .exp-edu .experience .medreck img,.school img{
+    width: 30px;
+    height: 30px;
+}
+
+.container-resume .resume-content .exp-edu .education .master,.bachelor{
+    display: flex;
+    align-items: center;
+}
+
+.container-resume .resume-content .exp-edu .education .master img,.bachelor img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ====================SKILLS DESIGN================ */
+.container-skills{
+    background-color: black;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+
+.container-skills .skills-content{
+    margin-left: 0px;
+}
+.container-skills .skills-content h2{
+    font-size: 18px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 100;
+    border: 1px solid darkgrey;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container-skills .skills-content h1{
+    color: floralwhite;
+    font-size: 2.8rem;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+.container-skills .skills-content h1 span{
+    color: aqua;
+}
+
+.container-skills .skills-content p{
+    color: darkgray;
+    margin: 20px 0px 20px 0px;
+    line-height: 30px;
+}
+
+.container-skills .skills-content button{
+    background-color: aqua;
+    color: black;
+    border: 1px solid ;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.container-skills .skills-content button:hover{
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    cursor: pointer;
+
+}
+
+.container-skills .skills-content button a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.container-skills .skills-content button:hover a{
+    color: aqua;
+}
+
+.container-skills .skills-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+.container-skills .skills-image h2{
+    color: floralwhite;
+    font-size: 20px;
+
+}
+
+.container-skills .skills-image .box{
+    background-color: #1f1f1f;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(43, 41, 41);
+    line-height: 40px;
+}
+
+.container-skills .skills-image .box button{
+    background-color: rgb(17, 17, 17);
+    color: darkgray;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container-skills .skills-image .box:hover{
+    border: 1px solid aqua;
+}
+
+.container-skills .skills-image .box:hover button{
+    background-color: aqua;
+    color: black;
+
+}
+
+/* ===================PROJECT DESIGN=============== */
+
+.container-project{
+    width: 100%;
+    background: url('images/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center; 
+      /* padding: 40.875rem 0 9.375rem; */
+      padding-bottom: 100px;
+}
+
+.container-project .project-content{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container-project .project-content h2{
+    font-size: 18px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 100;
+    border: 1px solid darkgrey;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin-left: 600px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.container-project .project-content h1{
+    color: floralwhite;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.container-project .project-content h1 span{
+    color: aqua;
+}
+
+.container-project .project-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-project .project-1 iframe{
+    margin-left: 50px;
+    width: 700px;
+    height: 500px;
+}
+
+.container-project .project-1 h1{
+    color: floralwhite;
+    font-size: 2,5rem;
+}
+
+.container-project .project-1 button{
+    background-color: aqua;
+    color: black;
+    border: 1px solid ;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.container-project .project-1 button:hover{
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    cursor: pointer;
+}
+
+.container-project .project-1 button a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.container-project .project-1 button:hover a{
+    color: aqua;
+}
+
+/* ================CONTACT DESIGN================ */
+
+.container-contact{
+    background-color: black;
+    /* display: flex;
+    align-items:center ;
+    justify-content: space-around;*/
+    padding: 50px;
+}
+
+.container-contact h2{
+    font-size: 18px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 100;
+    border: 1px solid darkgrey;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin-left: 550px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container-contact h1{
+    color: floralwhite;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.container-contact .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-contact .contact .phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f1f1f;
+    border: 1px;
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
+    
+}
+
+.container-contact .contact .phone:hover{
+   border: 1px solid aqua;
+}
+
+.container-contact .contact .phone:hover a{
+    color: aqua;
+    /* background-color: aliceblue; */
+}
+
+.container-contact .contact img{
+    width: 40px;
+    height: 40px;
+}
+
+.container-contact .contact h3{
+    color: darkgray;
+    font-size: 18px;
+    margin: 40px 40px 40px 20px;
+}
+
+.container-contact .contact a{
+    text-decoration: none;
+    font-size: 20px;
+    color: floralwhite;
+    margin-left: 40px;
+}
+
+/* ======================COPY DESIGN================== */
+
+.container-copy{
+    background-color:rgb(10, 8, 8);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-copy h2{
+    font-size: 18px;
+    color: floralwhite;
+}
+
+.container-copy h2 span{
+    color: aqua;
+}
+
+.container-copy img{
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+}
+
+@media screen  and (max-width:640px){
+
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header ul li{
+        display: block;
+        padding: 10px 0;
+    }
+
+    header ul{
+        display: none;                                                                      
+    }
+
+    header .logo{
+        align-self: flex-start;
+        font-size: 18px;
+        margin: 10px 0px 0px 30px;
+    }
+
+    header .hamburger{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 40px;
+    }   
+
+    .showmenu{
+        display: block;
+    }
+
+    .container .content{
+        position: absolute;
+        margin:0px 0px 0px 100px;
+        top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .container .content h1{
+        font-size: 30px;
+    }
+
+    .container .content p{
+        line-height: 30px;
+    }
+
+    
+
+    /* =======ABOUT SECTION====== */
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-about .about-content{
+    margin: 0px 50px 50px 30px;
+    padding: 10px;
+}
+
+.container-about .about-content h2{
+    font-size: 20px;
+}
+
+.container-about .about-content p{
+    font-size: 14px;
+}
+
+.container-about .about-content .about-service ul li{
+    font-size: 16px;
+}
+
+.container-about .about-content .about-service{
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px ; */
+}
+
+.container-about .about-content .about-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-about .about-content .about-service ul:last-child{
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+
+.container-about .about-content .about-contact .phone{
+    margin-left: -100px;
+}
+
+.container-about .about-content .about-contact .email-item a,.phone-item a{
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 16px;
+}
+
+
+/* ===============RESUME DESIGN============= */
+
+.container-resume{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-resume .resume-content .exp-edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 800px;
+    margin:70px 0px 0px 100px ;
+}
+
+.container-resume .resume-content .exp-edu h1{
+    font-size: 18px;
+}
+
+.container-resume .resume-content h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-resume .resume-content button{
+    /* font-size: 30px; */
+    margin-left: 70px;
+}
+
+.container-resume .image img{
+    width: 150px;
+    height: 150px;
+}
+
+.container-resume .resume-content .exp-edu .education{
+    margin-top: -100px;
+}
+
+/* ================SKILLS DESIGN============ */
+
+.container-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-skills .skills-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============PROJECT DESIGN============= */
+
+.container-project .project-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-project .project-content h2{
+    
+    margin-left: 50px;
+}
+
+.container-project .project-content h1{
+    font-size: 2rem;
+}
+
+.container-project .project-1 iframe{
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.container-project .project-1 h1{
+    color: floralwhite;
+    font-size: 1.5rem;
+}
+
+/* ==================CONTACT DESIGN==============*/
+
+.container-contact .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-contact h2{
+    margin-left: 50px;
+}
+
+.container-contact .contact .phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f1f1f;
+    border: 1px;
+    border-radius: 20px;
+    width: 350px;
+    height: 100px;
+    margin: 20px;
+    
+}
+
+.container-contact .contact h3{
+    color: darkgray;
+    font-size: 16px;
+    /* margin: 20px 20px 20px 20px; */
+    margin: 10px;
+}
+
+.container-contact .contact a{
+    text-decoration: none;
+    font-size: 16px;
+    color: floralwhite;
+    margin-left: 20px;
+}
+
+/* ================COPY DESIGN============ */
+
+.container-copy{
+    background-color:rgb(10, 8, 8);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+}
+
+@media screen and (max-width: 820px){
+    .container-about .about-image {
+        display: none;
+    }
+
+    .container-resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-project .project-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .container-project .project-content h2{
+        
+        margin-left: 50px;
+    }
+    
+    .container-project .project-content h1{
+        font-size: 2rem;
+    }
+    
+    .container-project .project-1 iframe{
+        margin-left: 30px;
+        width: 300px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .container-project .project-1 h1{
+        color: floralwhite;
+        font-size: 1.5rem;
+    }
+
+    .container-contact .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container-contact .contact .phone{
+        margin: 20px;
+        
+    }
+
+    .container-contact h2{
+        margin-left: 50px;
+    }
+
+}
